@@ -620,7 +620,7 @@ Zotero.Attachments = new function(){
 		 MarginNote (marginnoteapp://)
 		 Zotero (zotero://) */
 
-		var urlRe = /^((https?|zotero|evernote|onenote|brain|nv|mlo|kindle|x-devonthink-item|bear|marginnoteapp|ftp):\/\/|logosres:)[^\s]*$/;
+		var urlRe = new RegExp(Zotero.Prefs.get('validUrlProtocolsRegexp'));
 		var matches = urlRe.exec(url);
 		if (!matches) {
 			throw ("Invalid URL '" + url + "' in Zotero.Attachments.linkFromURL()");

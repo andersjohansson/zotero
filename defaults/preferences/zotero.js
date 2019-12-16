@@ -195,3 +195,7 @@ pref("extensions.zotero.translators.RIS.import.keepID", false);
 // Retracted Items
 pref("extensions.zotero.retractions.enabled", true);
 pref("extensions.zotero.retractions.recentItems", "[]");
+
+//Attached urls
+pref("extensions.zotero.validUrlProtocolsRegexp", "^((https?|zotero|evernote|onenote|brain|nv|mlo|kindle|x-devonthink-item|bear|marginnoteapp|ftp)://|logosres:)[^\\s]*$");
+
